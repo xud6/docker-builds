@@ -1,5 +1,7 @@
 FROM easypi/shadowsocks-libev
 
+RUN useradd -r ss
+USER ss
 ENV LOCAL_ADDR 0.0.0.0
 ENV LOCAL_PORT 1080
 ENV METHOD aes-256-cfb
