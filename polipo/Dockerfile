@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:edge
 
 RUN apk --update add polipo && \
     rm -rf /var/cache/apk/* && \
