@@ -1,7 +1,6 @@
-FROM alpine:edge
+FROM debian
 
-RUN apk --update add polipo && \
-    rm -rf /var/cache/apk/* && \
-rm -rf /root/.cache
-
-CMD polipo "POLIPO_CONFIG"
+RUN apk-get update && apt-get install polipo && apt-get clean
+RUN useradd -r polipo
+USER polipo
+CMD polipo "POLIPO_PARAM"
