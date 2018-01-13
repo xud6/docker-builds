@@ -1,6 +1,6 @@
 FROM easypi/shadowsocks-libev
 
-RUN useradd -r ss
+RUN adduser -S ss
 USER ss
 ENV LOCAL_ADDR 0.0.0.0
 ENV LOCAL_PORT 1080
