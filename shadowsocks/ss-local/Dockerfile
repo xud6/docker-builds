@@ -1,4 +1,4 @@
-FROM easypi/shadowsocks-libev
+FROM shadowsocks/shadowsocks-libev
 
 RUN adduser -S ss
 USER ss
