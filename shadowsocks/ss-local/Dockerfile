@@ -1,7 +1,5 @@
 FROM shadowsocks/shadowsocks-libev
 
-RUN adduser -S ss
-USER ss
 ENV LOCAL_ADDR 0.0.0.0
 ENV LOCAL_PORT 1080
 ENV METHOD aes-256-cfb
