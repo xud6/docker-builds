@@ -1,4 +1,4 @@
-FROM fluent/fluentd:v1.10-1
+FROM fluent/fluentd:v1.12-1
 
 # Use root account to use apk
 USER root
